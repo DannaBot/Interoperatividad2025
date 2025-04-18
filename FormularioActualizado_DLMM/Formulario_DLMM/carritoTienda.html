@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido: DANNA</title>
+    <link rel="stylesheet" href="formularioDanna.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+
+    <header>
+        <b id="bienvenida" class="bienvenida">¡Bienvenida, Danna!</b>
+        <button class="boton" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </header>
+
+    <div class="tienda">
+        <h1>P R O D U C T O S</h1>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/tomate.jpg" alt="Tomate" class="producto-img">
+                <h2>Tomate kg</h2>
+                <p>Precio: $15.00</p>
+                <button onclick="agregarAlCarrito('Tomate kg', 15)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/Zanahoria.jpeg" alt="Zanahoria" class="producto-img">
+                <h2>Zanahoria kg</h2>
+                <p>Precio: $20</p>
+                <button onclick="agregarAlCarrito('Zanahoria kg', 20)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/lechuga.jpg" alt="Lechuga" class="producto-img">
+                <h2>Lechuga pieza</h2>
+                <p>Precio: $15</p>
+                <button onclick="agregarAlCarrito('Lechuga pieza', 15)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/cebolla.webp" alt="Cebolla" class="producto-img">
+                <h2>Cebolla kg</h2>
+                <p>Precio: $18</p>
+                <button onclick="agregarAlCarrito('Cebolla kg', 18)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/limon.webp" alt="Limon" class="producto-img">
+                <h2>Limón kg</h2>
+                <p>Precio: $20</p>
+                <button onclick="agregarAlCarrito('Limón kg', 20)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/pimiento.jpg" alt="Pimiento" class="producto-img">
+                <h2>Pimineto kg</h2>
+                <p>Precio: $65</p>
+                <button onclick="agregarAlCarrito('Pimiento kg', 65)">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <h1 id="carrito0">C A R R I T O</h1>
+        <ul id="carrito">
+            <!-- Productos agregados al carrito -->
+        </ul>
+        <h3>Total: $<span id="total">0.00</span></h3>
+        <button class="boton" onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button class="boton" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+
+    <div id="carrito-flotante" onclick="irACarrito()">
+        🛒
+    </div>
+    
+
+    <footer>
+        <div class="container">
+            <p><b>DANNA LISSETH MARTÍNEZ MONTERRUBIO</b></p>
+        </div>
+    </footer>
+
+<script src="login.js"></script>
+
+</body>
+</html>

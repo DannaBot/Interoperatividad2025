@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro: DANNA</title>
+    <link rel="stylesheet" href="formularioDanna.css">
+</head>
+
+<body>
+<header>
+    <b>¡BIENVENIDAS Y BIENVENIDOS! 🥑</b>
+    <button class="boton" onclick="cambiarTema()">Modo Oscuro</button>
+    <button class="boton" onclick="iniciarSesion()">Iniciar Sesión</button>
+</header>
+
+<div class="formulario">
+    <h1>R E G I S T R A R S E</h1>
+    <p>¡Hola!, si eres un nuevo usuario, por favor crea una cuenta...</p>
+
+    <form id="registroForm">
+        <label><b>Nombre: </b></label><br>
+        <input type="text" id="nombre" name="nombre"/>
+        <br>
+        <label><b>Número: </b></label><br>
+        <input type="text" id="numero" name="numero"/>
+        <br>
+        <label><b>Correo: </b></label><br>
+        <input type="text" id="correo" name="correo"/>
+        <br>
+        <label><b>Cumpleaños: </b></label><br>
+        <input type="date" id="nacimiento" name="nacimiento"/>
+        <br><br>
+        <label><b>Nombre de usuario: </b></label><br>
+        <input type="text" id="usuario" name="usuario"/>
+        <br>
+        <label><b>Contraseña: </b></label><br>
+        <input type="password" id="contra" name="contra"/>
+        <br><br>
+        <button type="submit" class="submit">ENVIAR</button>
+        
+    </form>
+</div>
+
+<h1>R E G I S T R O S</h1>
+<table id="tablaDatos">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Número</th>
+            <th>Correo</th>
+            <th>Cumpleaños</th>
+            <th>Nombre de usuario</th>
+            <th>Contraseña</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="guardarDatos">
+        <!-- Los datos se llenarán aquí desde JavaScript -->
+    </tbody>
+</table>
+
+<footer>
+    <div class="container">
+        <p><b>DANNA LISSETH MARTÍNEZ MONTERRUBIO</b></p>
+    </div>
+</footer>
+
+<script src="login.js"></script>
+<script src="rescatarDatos.js"></script>
+
+</body>
+</html>

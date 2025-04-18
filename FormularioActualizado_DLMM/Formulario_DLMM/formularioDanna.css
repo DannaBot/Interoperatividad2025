@@ -1,0 +1,207 @@
+/*Descripción: Formulario
+  Autora: Danna Lisseth Martínez Monterrubio
+  Fecha: 26/02/25*/
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #249d95, #ffdf5f);
+    text-align: justify;
+    border: 50px;
+}
+
+header {
+    background-color: #fbcf7f;
+    color:hsl(162, 67%, 32%);
+    text-align: right;
+    padding: 20px;
+}
+
+.boton{
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s;
+  }
+  
+  .boton:hover {
+    background: linear-gradient(45deg,  #c0c241, #feb47b);
+    transform: scale(1.05);
+  }
+  
+h1 {
+   color: #ffffff;
+   padding-left: 20px;
+}
+
+.instruc p{
+    font-size: 15px;
+    color:  #ffffff;
+}
+
+.formulario {
+    display: block;
+    text-align: justy;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.formulario label{
+  display: block;
+  margin-bottom: 2px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.formulario input[type="text"], input[type="date"], input[type="password"]{
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #f3e5da;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: justify;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submit {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: 2px solid#feb47b;
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    width: 200px;
+  }
+  
+  .submit:hover {
+    background: linear-gradient(to left, #c0c241, #feb47b);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+
+#tablaDatos {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+#tablaDatos th, #tablaDatos td {
+  padding: 5px 5px;
+  border: 1px solid #ddd;
+}
+
+#tablaDatos thead {
+  background-color: #f2f2f2;
+}
+
+#tablaDatos th {
+  background-color: #ffa25f;
+  color: #ffffff;
+}
+
+#tablaDatos tr:hover {
+  background-color: #f1f1f1;
+}
+
+.eliminar-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.eliminar-btn:hover {
+  background-color: #ff0000;
+}
+
+.editar-btn {
+  background-color: #a1ec6c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.editar-btn:hover {
+  background-color: #54c900;
+}
+
+.guardar-btn {
+  background-color: #ece36c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.guardar-btn:hover {
+  background-color: #f5e724;
+}
+
+input[type="text"], input[type="date"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+  border-color: #a8659c; 
+  box-shadow: 0 0 5px rgba(255, 2, 209, 0.5); 
+}
+
+.edit-mode {
+  background-color: #f9f9f9;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Estilos para los enlaces */
+.link {
+  display: block;
+  margin: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #C1CC6E;
+}
+
+.modoOscuro{
+  background: linear-gradient(to right, #31594e, #38f4e7);
+  color: #ffffff;
+}
+
+footer {
+    color:hsl(162, 67%, 32%);
+    text-align: left;
+    padding: 10px;
+    font-size: 1em;
+    padding-left: 20px;
+    background-color: #fbcf7f;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña: DANNA</title>
+    <link rel="stylesheet" href="formularioDanna.css">
+</head>
+
+<body>
+<header>
+    <h1>RECUPERAR CONTRASEÑA 🥑</h1>
+</header>
+
+<div class="formulario">
+    <h1>Recupera tu contraseña</h1>
+    
+    <form id="recuperarForm">
+        <p>Introduce tu correo electrónico registrado para recuperar tu contraseña...</p>
+        <label><b>Correo: </b></label><br>
+        <input type="text" id="correo" name="correo"/>
+        <br><br>
+        <button type="submit" class="submit">Buscar Cuenta</button>
+        <br><br>
+        <a href="formularioInicio.html" class="link">Volver a Iniciar Sesión</a>
+        <a href="formularioRegistro.html" class="link">Registrarse</a>
+    </form>
+
+    <form id="nuevaContrasenaForm" style="display:none;">
+        <p>Introduce tu nueva contraseña...</p>
+        <label><b>Nueva Contraseña: </b></label><br>
+        <input type="password" id="nuevaContrasena" name="nuevaContrasena"/>
+        <br><br>
+        <button type="submit" class="submit">Actualizar Contraseña</button>
+    </form>
+</div>
+
+<footer>
+    <div class="container">
+        <p><b>DANNA LISSETH MARTÍNEZ MONTERRUBIO</b></p>
+    </div>
+</footer>
+
+<script src="recuperarContrasena.js"></script>
+
+</body>
+</html>
